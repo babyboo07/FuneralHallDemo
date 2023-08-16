@@ -176,6 +176,11 @@ body {
   color: #626576;
 }
 
+.user-app-intro .common-title,
+.user-app-intro .common-paragraph{
+  color: #ffffff;
+}
+
 .app-intro {
   background: url(/public/app-intro-background.png) no-repeat center;
   height: 1056px;
@@ -205,15 +210,35 @@ body {
 }
 
 .user-app-intro {
+  display: flex;
   border-radius: 40px;
   background: #ae8d68;
-  display: grid;
+  /* display: grid; */
   height: 1056px;
   border-radius: 40px;
   margin-top: 12px;
 }
 
-.user-app-intro .grid-media {
+.section-media{
+  flex: 2.5;
+  border-radius: 40px;
+  background: url(/public/user-app-intro.png) no-repeat center;
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+
+.user-app-intro .section-content{
+  flex: 1;
+  margin: 0 30px;
+}
+
+.user-app-intro .section-content .common-title,
+.user-app-intro .section-content .common-paragraph
+{
+  width: 87%;
+}
+
+/* .user-app-intro .grid-media {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
@@ -240,7 +265,7 @@ body {
 .user-app-intro .grid-content .common-title,
 .user-app-intro .grid-content .common-paragraph {
   color: #ffffff;
-}
+} */
 
 .general-user {
   border-radius: 40px;
@@ -250,7 +275,7 @@ body {
   margin-top: 12px;
 }
 
-.general-user .grid-media {
+/* .general-user .grid-media {
   grid-column: 3 / span 2;
   grid-row: 1;
 }
@@ -281,7 +306,7 @@ body {
 .general-user2 .grid-content .common-subtitle,
 .general-user2 .grid-content .common-paragraph {
   color: #997c5c;
-}
+} */
 
 .general-user2 {
   border-radius: 40px;
@@ -291,7 +316,7 @@ body {
   margin-top: 12px;
 }
 
-.general-user2 .grid-media {
+/* .general-user2 .grid-media {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
@@ -313,7 +338,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
-}
+} */
 
 .app-intro .app-intro-top {
   background-color: #ae8d68;
@@ -644,6 +669,42 @@ body {
     max-height: 480px;
     height: 380px;
   }
+
+  .app-intro,
+  .user-app-intro{
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+  }
+
+  .user-app-intro .section-media,
+  .user-app-intro .section-content
+  {
+    flex: 1;
+    max-height: 400px;
+  }
+
+  .user-app-intro .section-media{
+    border-radius: 40px 40px 0 0;
+    background-size: 110% 100%;
+  }
+
+  .user-app-intro .section-content{
+    margin: 0;
+  }
+
+  .user-app-intro .section-content .common-title{
+    width: 100%;
+    font-size: 30px;
+    line-height: 45px;
+    padding:0 0 10px 35px;
+  }
+
+  .user-app-intro .section-content .common-paragraph{
+    font-size: 14px;
+    width: 90%;
+    padding: 0 30px 0 35px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -654,7 +715,7 @@ body {
     height: 30%;
   }
 
-  .user-app-intro {
+  /* .user-app-intro {
     width: 100%;
     height: auto !important;
     display: block;
@@ -679,7 +740,7 @@ body {
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
-  }
+  } */
 
   .general-user.app-intro {
     display: flex;
@@ -717,11 +778,11 @@ body {
     padding: 100px 24px;
   }
 
-  .app-intro {
+  /* .app-intro {
     height: auto;
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .app-intro .app-intro-top {
     height: 100vh;
