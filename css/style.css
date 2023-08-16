@@ -128,8 +128,8 @@ body {
 .CTA-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 60%;
   margin: auto;
+  width: 68%;
 }
 
 .CTA-left,
@@ -146,9 +146,16 @@ body {
 }
 
 .navigation-image {
+  position : absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 588px;
+  height: 588px;
   width: 70%;
   margin: auto;
-  height: 588px;
+  background: url(/public/main-navigation-image.png) no-repeat top;
+  background-size: cover;
 }
 
 .navigation-image > div {
@@ -270,7 +277,17 @@ body {
     color: #997C5C;
 }
 
+@media only screen and (max-width: 1920) {
+  .navigation-image{
+    width: 50%;
+  }
+}
 
+@media only screen and (max-width: 1200) {
+  .navigation-image{
+    width: 60%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .section-content,
