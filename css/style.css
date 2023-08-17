@@ -410,7 +410,8 @@ body {
 .app-intro .app-intro-top .section-content-white {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  /* width: 50%; */
+  width: 715px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -421,7 +422,8 @@ body {
 .app-intro .app-intro-top .section-content-white .common-paragraph {
   color: #ffffff;
   text-align: center;
-  width: 70.5%;
+  /* width: 70.5%; */
+  width: 100%;
 }
 
 .app-intro .app-intro-top .section-content {
@@ -430,7 +432,7 @@ body {
 
 .app-intro .app-intro-bottom {
   display: grid;
-  grid-template-columns: 0.7fr 1fr;
+  grid-template-columns: 40% 60%;
   width: 100%;
   height: 50%;
 }
@@ -496,6 +498,17 @@ body {
   border-radius: 40px;
   display: grid;
   grid-template-columns: 1fr 0.7fr;
+}
+
+.phone-media{
+  margin: -6rem;
+}
+
+.app-section .phone-media{
+  margin: -6rem;
+  background: url(/public/phone-preview1.png) no-repeat left;
+  background-size: contain;
+  margin-left: 50px;
 }
 
 .app-section-block .phone-media {
@@ -645,6 +658,15 @@ body {
   line-height: 28px;
 }
 
+
+.phone-preview{
+  background: url(/public/phone-preview.png) no-repeat right;
+  background-size: contain;
+  height: 89%;
+  margin-right: 50px
+}
+
+
 @media only screen and (max-width: 1920) {
   .navigation-image {
     width: 50%;
@@ -659,7 +681,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .common-title {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: -0.36px;
@@ -675,6 +697,10 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
+  }
+
+  .app-intro .app-intro-top .common-paragraph{
+    font-size: 14px;
   }
 
   .navigation {
@@ -729,7 +755,8 @@ body {
   .user-app-intro {
     display: flex;
     flex-direction: column;
-    height: 750px;
+    /* height: 750px; */
+    height: 844px;
   }
 
   .user-app-intro .section-media,
@@ -740,7 +767,7 @@ body {
 
   .user-app-intro .section-media {
     border-radius: 40px 40px 0 0;
-    background-size: 110% 100%;
+    background-size: 490px 410px;
   }
 
   .user-app-intro .section-content {
@@ -784,6 +811,7 @@ body {
 
   .general-user .section-media {
     height: 410px;
+    order: 1;
   }
 
   .general-user .section-content .common-title {
@@ -805,6 +833,43 @@ body {
     padding: 0 30px 0 35px;
   }
 
+  .app-intro .app-intro-top{
+    height:70%;
+  }
+  .app-intro .app-intro-bottom{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    height: 30%;
+  }
+
+  .app-intro .app-intro-bottom .phone-preview{
+    background: url(/public/phone-preview.png) no-repeat center;
+    background-size: contain;
+    height: 287px;
+    margin-right: 0;
+  }
+
+  .app-intro .app-intro-bottom .app-intro-content .app-intro-block{
+    width: auto;
+    margin-top: 0;
+    padding: 0 12px 25px 12px;
+  }
+
+  .app-intro-block .common-title,
+  .app-intro-block .common-subtitle,
+  .app-intro-block .common-paragraph{
+    padding-bottom: 0;
+  }
+
+  .app-intro-content .app-intro-block .common-subtitle,
+  .app-intro-content .app-intro-block .common-paragraph{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .app-intro .app-intro-bottom .app-intro-content{
+    padding-left: 0;
+  }
   /* responsive image general user */
 
   #main1 {
@@ -814,17 +879,51 @@ body {
 
   #main2 {
     background: url(/public/general-user-main2.png) no-repeat center;
-    background-size: 378px 410px;
   }
 
   #main3 {
     background: url(/public/general-user-main3.png) no-repeat center;
-    background-size: 378px 410px;
   }
 
   #main4 {
     background: url(/public/general-user-main4.png) no-repeat center;
-    background-size: 378px 410px;
+  }
+
+  #main2, #main3, #main4 {
+    background-size: 490px 410px;
+  }
+
+  .phone-media{
+    margin: -14.7rem;
+  }
+
+  .app-section-top .app-section-block{
+    margin-top: 0;
+  }
+
+  .app-section .app-section-top .app-section-block{
+    height:251px;
+  }
+
+  .app-section{
+    position: relative;
+    height: 544px;
+  }
+
+  .app-section .app-section-top{
+    height: 100%;
+  }
+
+  .app-section .app-section-block .app-section-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .app-section .phone-media{
+    height: 287px;
+    background: url(/public/phone-preview1.png) no-repeat center;
+    background-size: contain;
   }
 }
 
@@ -867,6 +966,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     height: auto;
+    height: 844px;
   }
 
   .general-user .grid-media {
@@ -905,9 +1005,9 @@ body {
     flex-direction: column;
   } */
 
-  .app-intro .app-intro-top {
+  /* .app-intro .app-intro-top {
     height: 100vh;
-  }
+  } */
 
   .app-intro .app-intro-top .section-content-white {
     width: auto;
