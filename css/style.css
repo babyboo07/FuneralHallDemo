@@ -290,6 +290,9 @@ body {
 .general-user .section-media,
 .general-user2 .section-media {
   background: #e9dfd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .general-user .section-content,
@@ -354,8 +357,24 @@ body {
   margin-top: 12px;
 }
 
-.general-user2 .section-media .section-media-wcircle {
-  background: url(/public/general-user-main4-circle.png) no-repeat center;
+#main1 {
+  background: url(/public/general-user-main1.png) no-repeat center;
+  background-size: 1260px 1056px;
+}
+
+#main2 {
+  background: url(/public/general-user-main2.png) no-repeat center;
+  background-size: 1260px 1056px;
+}
+
+#main3 {
+  background: url(/public/general-user-main3.png) no-repeat center;
+  background-size: 1260px 1056px;
+}
+
+#main4 {
+  background: url(/public/general-user-main4.png) no-repeat center;
+  background-size: 1260px 1056px;
 }
 
 /* .general-user2 .grid-media {
@@ -639,6 +658,25 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .common-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.36px;
+  }
+
+  .common-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+
+  .common-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
   .navigation {
     padding: 0 24px;
   }
@@ -711,15 +749,82 @@ body {
 
   .user-app-intro .section-content .common-title {
     width: 100%;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0 0 10px 35px;
+  }
+
+  .user-app-intro .section-content .common-paragraph {
+    font-size: 16px;
+    width: 90%;
+    padding: 0 30px 0 35px;
+  }
+
+  .general-user {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .general-user .section-media,
+  .general-user .section-content {
+    flex: none;
+    max-height: 400px;
+  }
+
+  .general-user .section-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .general-user .section-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .general-user .section-media {
+    height: 410px;
+  }
+
+  .general-user .section-content .common-title {
+    width: 100%;
     font-size: 30px;
     line-height: 45px;
     padding: 0 0 10px 35px;
   }
 
-  .user-app-intro .section-content .common-paragraph {
+  .general-user .section-content .common-subtitle {
     /* font-size: 14px; */
     width: 90%;
     padding: 0 30px 0 35px;
+  }
+
+  .general-user .section-content .common-paragraph {
+    /* font-size: 14px; */
+    width: 90%;
+    padding: 0 30px 0 35px;
+  }
+
+  /* responsive image general user */
+
+  #main1 {
+    background: url(/public/general-user-main1-responsive.png) no-repeat center;
+    background-size: 378px 410px;
+  }
+
+  #main2 {
+    background: url(/public/general-user-main2.png) no-repeat center;
+    background-size: 378px 410px;
+  }
+
+  #main3 {
+    background: url(/public/general-user-main3.png) no-repeat center;
+    background-size: 378px 410px;
+  }
+
+  #main4 {
+    background: url(/public/general-user-main4.png) no-repeat center;
+    background-size: 378px 410px;
   }
 }
 
