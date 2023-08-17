@@ -122,14 +122,14 @@ body {
   line-height: 32px;
   letter-spacing: -0.12px;
   color: #fff;
-  padding: 0 27.5%;
+  padding: 0 32%;
 }
 
 .CTA-wrapper {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 55%;
+  width: 52%;
 }
 
 .CTA-left,
@@ -143,6 +143,14 @@ body {
   color: #edc484;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.CTA-left .download,
+.CTA-right .download {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .navigation-image {
@@ -177,7 +185,7 @@ body {
 }
 
 .user-app-intro .common-title,
-.user-app-intro .common-paragraph{
+.user-app-intro .common-paragraph {
   color: #ffffff;
 }
 
@@ -219,7 +227,7 @@ body {
   margin-top: 12px;
 }
 
-.section-media{
+.section-media {
   flex: 2.5;
   border-radius: 40px;
   background: url(/public/user-app-intro.png) no-repeat center;
@@ -227,14 +235,13 @@ body {
   object-fit: cover;
 }
 
-.user-app-intro .section-content{
+.user-app-intro .section-content {
   flex: 1;
   margin: 0 30px;
 }
 
 .user-app-intro .section-content .common-title,
-.user-app-intro .section-content .common-paragraph
-{
+.user-app-intro .section-content .common-paragraph {
   width: 87%;
 }
 
@@ -269,10 +276,21 @@ body {
 
 .general-user {
   border-radius: 40px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   height: 1056px;
   border-radius: 40px;
   margin-top: 12px;
+}
+
+.general-user .section-content,
+.general-user2 .section-content {
+  background: none;
+}
+
+.general-user .section-media,
+.general-user2 .section-media {
+  background: #e9dfd5;
 }
 
 /* .general-user .grid-media {
@@ -310,7 +328,8 @@ body {
 
 .general-user2 {
   border-radius: 40px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   height: 1056px;
   border-radius: 40px;
   margin-top: 12px;
@@ -389,7 +408,7 @@ body {
 }
 
 .app-intro-content .app-intro-block .common-subtitle {
-  color: var(--lightmode-second-sec-600, #997C5C);
+  color: var(--lightmode-second-sec-600, #997c5c);
   font-family: Pretendard;
   font-size: 24px;
   font-style: normal;
@@ -399,7 +418,7 @@ body {
 }
 
 .app-intro-content .app-intro-block .common-paragraph {
-  color: var(--lightmode-second-sec-600, #997C5C);
+  color: var(--lightmode-second-sec-600, #997c5c);
   font-family: Pretendard;
   font-size: 24px;
   font-style: normal;
@@ -452,7 +471,7 @@ body {
   margin: auto 0;
 }
 
-.app-section-block .app-section-content .content-block{
+.app-section-block .app-section-content .content-block {
   display: flex;
   width: 540px;
   padding: 0px 12px;
@@ -464,7 +483,7 @@ body {
 }
 
 .app-section-content .common-title {
-  color: var(--lightmode-neutral-neu-0, #FFF);
+  color: var(--lightmode-neutral-neu-0, #fff);
   /* display/lg/Bold */
   font-family: Pretendard;
   font-size: 48px;
@@ -475,7 +494,7 @@ body {
 }
 
 .app-section-content .common-subtitle {
-  color: var(--lightmode-neutral-neu-0, #FFF);
+  color: var(--lightmode-neutral-neu-0, #fff);
   font-family: Pretendard;
   font-size: 24px;
   font-style: normal;
@@ -485,7 +504,7 @@ body {
 }
 
 .app-section-content .common-paragraph {
-  color: var(--lightmode-neutral-neu-0, #FFF);
+  color: var(--lightmode-neutral-neu-0, #fff);
   font-family: Pretendard;
   font-size: 24px;
   font-style: normal;
@@ -512,7 +531,7 @@ body {
   align-self: stretch;
 }
 
-.app-section-footer .app-section-block .app-section-row{
+.app-section-footer .app-section-block .app-section-row {
   display: flex;
   padding: 16px 0px;
   align-items: center;
@@ -528,7 +547,7 @@ body {
   gap: 4px;
   align-self: stretch;
   border-radius: 40px;
-  background: var(--lightmode-primary-pri-600, #0C1C2D);
+  background: var(--lightmode-primary-pri-600, #0c1c2d);
   width: 100%;
 }
 
@@ -557,7 +576,7 @@ body {
   align-self: stretch;
   height: 28px;
 
-  color: var(--lightmode-primary-pri-300, #83909E);
+  color: var(--lightmode-primary-pri-300, #83909e);
   /* text/lg/Regular */
   font-family: Pretendard;
   font-size: 18px;
@@ -573,7 +592,7 @@ body {
 }
 
 .footer-paragraph1 .paragraph1 .left {
-  color: var(--lightmode-primary-pri-300, #83909E);
+  color: var(--lightmode-primary-pri-300, #83909e);
   /* text/lg/Regular */
   font-family: Pretendard;
   font-size: 18px;
@@ -583,7 +602,7 @@ body {
 }
 
 .footer-paragraph1 .paragraph1 .right {
-  color: var(--lightmode-primary-pri-50, #F3F4F6);
+  color: var(--lightmode-primary-pri-50, #f3f4f6);
   /* text/lg/Regular */
   font-family: Pretendard;
   font-size: 18px;
@@ -593,7 +612,7 @@ body {
 }
 
 .footer-paragraph1 .paragraph1 .right {
-  color: var(--lightmode-primary-pri-50, #F3F4F6);
+  color: var(--lightmode-primary-pri-50, #f3f4f6);
   /* text/lg/Regular */
   font-family: Pretendard;
   font-size: 18px;
@@ -605,11 +624,11 @@ body {
 .separate {
   width: 1px;
   height: 16px;
-  background: #83909E;
+  background: #83909e;
 }
 
 .footer-title p {
-  color: var(--lightmode-second-sec-500, #AE8D68);
+  color: var(--lightmode-second-sec-500, #ae8d68);
   /* text/lg/Medium */
   font-family: Pretendard;
   font-size: 18px;
@@ -651,7 +670,8 @@ body {
 
   .header .subtitle {
     padding: 0 20px;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .CTA-wrapper {
@@ -664,6 +684,14 @@ body {
     text-align: center;
   }
 
+  .CTA-left .download,
+  .CTA-right .download {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+
   .navigation-image {
     min-width: 0;
     max-height: 480px;
@@ -671,36 +699,35 @@ body {
   }
 
   .app-intro,
-  .user-app-intro{
+  .user-app-intro {
     display: flex;
     flex-direction: column;
     height: 750px;
   }
 
   .user-app-intro .section-media,
-  .user-app-intro .section-content
-  {
+  .user-app-intro .section-content {
     flex: 1;
     max-height: 400px;
   }
 
-  .user-app-intro .section-media{
+  .user-app-intro .section-media {
     border-radius: 40px 40px 0 0;
     background-size: 110% 100%;
   }
 
-  .user-app-intro .section-content{
+  .user-app-intro .section-content {
     margin: 0;
   }
 
-  .user-app-intro .section-content .common-title{
+  .user-app-intro .section-content .common-title {
     width: 100%;
     font-size: 30px;
     line-height: 45px;
-    padding:0 0 10px 35px;
+    padding: 0 0 10px 35px;
   }
 
-  .user-app-intro .section-content .common-paragraph{
+  .user-app-intro .section-content .common-paragraph {
     font-size: 14px;
     width: 90%;
     padding: 0 30px 0 35px;
@@ -802,11 +829,11 @@ body {
     position: absolute;
     top: -320px;
   }
-  
+
   .app-intro .app-intro-top .section-content-white .common-title {
     width: 100%;
   }
-  
+
   .app-intro .app-intro-top .section-content-white .common-paragraph {
     width: 100%;
   }
