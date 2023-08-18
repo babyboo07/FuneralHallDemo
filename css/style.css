@@ -500,15 +500,16 @@ body {
   grid-template-columns: 1fr 0.7fr;
 }
 
-.phone-media{
+.phone-media {
   margin: -6rem;
 }
 
-.app-section .phone-media{
+.app-section .phone-media {
+  width: 100%;
   margin: -6rem;
   background: url(/public/phone-preview1.png) no-repeat left;
   background-size: contain;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .app-section-block .phone-media {
@@ -658,14 +659,12 @@ body {
   line-height: 28px;
 }
 
-
-.phone-preview{
+.phone-preview {
   background: url(/public/phone-preview.png) no-repeat right;
   background-size: contain;
   height: 89%;
-  margin-right: 50px
+  margin-right: 50px;
 }
-
 
 @media only screen and (max-width: 1920) {
   .navigation-image {
@@ -680,17 +679,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .app-section{
+  .app-section {
     justify-content: flex-start;
     position: relative;
     height: 544px;
   }
-  
-.app-section:last-of-type{
-  height: auto;
-}
 
-  p{
+  .app-section:last-of-type {
+    height: auto;
+  }
+
+  p {
     margin: 3px;
   }
 
@@ -713,7 +712,7 @@ body {
     line-height: 24px; /* 150% */
   }
 
-  .app-intro .app-intro-top .common-paragraph{
+  .app-intro .app-intro-top .common-paragraph {
     font-size: 14px;
   }
 
@@ -823,6 +822,10 @@ body {
     justify-content: center;
   }
 
+  .general-user .section-content .section-content-block {
+    padding: 0 12px 25px 12px;
+  }
+
   .general-user .section-media {
     height: 410px;
     order: 1;
@@ -832,38 +835,31 @@ body {
     width: 100%;
     font-size: 30px;
     line-height: 45px;
-    padding: 0 0 10px 35px;
   }
 
-  .general-user .section-content .common-subtitle {
-    /* font-size: 14px; */
-    width: 90%;
-    padding: 0 30px 0 35px;
-  }
-
+  .general-user .section-content .common-subtitle,
   .general-user .section-content .common-paragraph {
     /* font-size: 14px; */
     width: 90%;
-    padding: 0 30px 0 35px;
   }
 
-  .app-intro .app-intro-top{
-    height:70%;
+  .app-intro .app-intro-top {
+    height: 70%;
   }
-  .app-intro .app-intro-bottom{
+  .app-intro .app-intro-bottom {
     grid-template-columns: 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: max-content;
     height: 30%;
   }
 
-  .app-intro .app-intro-bottom .phone-preview{
+  .app-intro .app-intro-bottom .phone-preview {
     background: url(/public/phone-preview.png) no-repeat center;
     background-size: contain;
     height: 287px;
     margin-right: 0;
   }
 
-  .app-intro .app-intro-bottom .app-intro-content .app-intro-block{
+  .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
     width: auto;
     margin-top: 0;
   }
@@ -873,100 +869,85 @@ body {
   .content-block .common-paragraph,
   .app-intro-block .common-title,
   .app-intro-block .common-subtitle,
-  .app-intro-block .common-paragraph{
+  .app-intro-block .common-paragraph {
     padding-bottom: 0;
   }
 
   .app-section-block .content-block .common-subtitle,
   .app-section-block .content-block .common-paragraph,
   .app-intro-content .app-intro-block .common-subtitle,
-  .app-intro-content .app-intro-block .common-paragraph{
+  .app-intro-content .app-intro-block .common-paragraph {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .app-intro .app-intro-bottom .app-intro-content{
+  .app-intro .app-intro-bottom .app-intro-content {
     padding-left: 0;
-  }
-  /* responsive image general user */
-
-  #main1 {
-    background: url(/public/general-user-main1-responsive.png) no-repeat center;
-    background-size: 378px 410px;
+    padding-top: 40px;
   }
 
-  #main2 {
-    background: url(/public/general-user-main2.png) no-repeat center;
-  }
-
-  #main3 {
-    background: url(/public/general-user-main3.png) no-repeat center;
-  }
-
+  #main1,
+  #main2,
+  #main3,
   #main4 {
-    background: url(/public/general-user-main4.png) no-repeat center;
-  }
-
-  #main2, #main3, #main4 {
     background-size: 490px 410px;
   }
 
-  .phone-media{
+  .phone-media {
     margin: -14.7rem;
   }
 
-  .app-section-top .app-section-block{
+  .app-section-top .app-section-block {
     margin-top: 0;
   }
 
-  .app-section .app-section-top .app-section-block{
-    height:251px;
+  .app-section .app-section-top .app-section-block {
+    height: 251px;
     grid-template-columns: 1fr;
     grid-template-rows: 2;
   }
 
-  .app-section .app-section-top{
+  .app-section .app-section-top {
     height: 100%;
   }
 
-  .app-section .app-section-block .app-section-content{
+  .app-section .app-section-block .app-section-content {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 239px;
+    height: 281px;
   }
 
-  .app-section-block .app-section-content .content-block{
+  .app-section-block .app-section-content .content-block {
     height: 100%;
     margin-right: 0;
     width: auto;
   }
 
   .app-intro .app-intro-bottom .app-intro-content .app-intro-block,
-  .app-section-block .app-section-content .content-block{
+  .app-section-block .app-section-content .content-block {
     padding: 0 12px 25px 12px;
   }
 
   .app-section-content .common-title,
   .app-section-content .common-subtitle,
-  .app-section-content .common-paragraph
-  {
+  .app-section-content .common-paragraph {
     color: #997c5c;
   }
 
-  .app-section .phone-media{
+  .app-section .phone-media {
     height: 287px;
     background: url(/public/phone-preview1.png) no-repeat center;
     background-size: contain;
     margin: 30px 0;
   }
 
-  .app-section .app-section-footer{
+  .app-section .app-section-footer {
     padding: 20px 20px 39px;
     border-radius: 40px;
   }
 
-  .app-section-footer .footer-paragraph1{
+  .app-section-footer .footer-paragraph1 {
     flex-wrap: wrap;
     height: auto;
     gap: 5px;
