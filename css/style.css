@@ -30,7 +30,6 @@ body {
     linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.35) 100%), #050304;
   height: 1080px;
   background-color: #ccc;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -45,8 +44,6 @@ body {
 }
 
 .navigation {
-  /* width: 100%; */
-  /* backdrop-filter: blur(2px); */
   display: flex;
   height: 108px;
   padding: 0px 26%;
@@ -221,7 +218,6 @@ body {
   display: flex;
   border-radius: 40px;
   background: #ae8d68;
-  /* display: grid; */
   height: 1056px;
   border-radius: 40px;
   margin-top: 12px;
@@ -243,35 +239,6 @@ body {
 .user-app-intro .section-content .common-paragraph {
   width: 100%;
 }
-
-/* .user-app-intro .grid-media {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.user-app-intro .grid-media > img {
-  height: 1056px;
-  width: 1260px;
-}
-
-.user-app-intro .grid-content {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.user-app-intro .grid-content {
-  display: flex;
-  padding: 0px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.user-app-intro .grid-content .common-title,
-.user-app-intro .grid-content .common-paragraph {
-  color: #ffffff;
-} */
 
 .general-user {
   border-radius: 40px;
@@ -315,39 +282,6 @@ body {
   color: #997c5c;
 }
 
-/* .general-user .grid-media {
-  grid-column: 3 / span 2;
-  grid-row: 1;
-}
-
-.general-user .grid-media > img {
-  height: 1056px;
-  width: 1260px;
-}
-
-.general-user .grid-content {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.general-user .grid-content {
-  display: flex;
-  padding: 0px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.general-user .grid-content .common-title,
-.general-user .grid-content .common-subtitle,
-.general-user .grid-content .common-paragraph,
-.general-user2 .grid-content .common-title,
-.general-user2 .grid-content .common-subtitle,
-.general-user2 .grid-content .common-paragraph {
-  color: #997c5c;
-} */
-
 .general-user2 {
   border-radius: 40px;
   display: flex;
@@ -377,30 +311,6 @@ body {
   background-size: 1260px 1056px;
 }
 
-/* .general-user2 .grid-media {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.general-user2 .grid-media > img {
-  height: 1056px;
-  width: 1260px;
-}
-
-.general-user2 .grid-content {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.general-user2 .grid-content {
-  display: flex;
-  padding: 0px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-} */
-
 .app-intro .app-intro-top {
   background-color: #ae8d68;
   border-radius: 40px;
@@ -410,8 +320,6 @@ body {
 .app-intro .app-intro-top .section-content-white {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
-  /* width: 715px; */
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -422,8 +330,7 @@ body {
 .app-intro .app-intro-top .section-content-white .common-paragraph {
   color: #ffffff;
   text-align: center;
-  /* width: 70.5%; */
-  width: 100%;
+  width: 44%;
 }
 
 .app-intro .app-intro-top .section-content {
@@ -456,7 +363,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 150% */
+  line-height: 36px; 
   letter-spacing: -0.12px;
 }
 
@@ -465,7 +372,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px; /* 150% */
+  line-height: 36px; 
   letter-spacing: -0.12px;
 }
 
@@ -506,7 +413,6 @@ body {
 
 .app-section .phone-media {
   width: 100%;
-  /* margin: -6rem; */
   background: url(/public/phone-preview1.png) no-repeat left;
   background-size: contain;
   margin-left: 10px;
@@ -549,7 +455,7 @@ body {
 .app-section-content .common-paragraph {
   color: #fff;
   font-size: 24px;
-  line-height: 36px; /* 150% */
+  line-height: 36px;
   letter-spacing: -0.12px;
 }
 
@@ -617,7 +523,7 @@ body {
   height: 28px;
   color: #83909e;
   font-size: 18px;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px; 
 }
 
 .footer-paragraph1 .paragraph1 {
@@ -631,19 +537,19 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px; 
 }
 
 .footer-paragraph1 .paragraph1 .right {
   color: #f3f4f6;
   font-size: 18px;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px; 
 }
 
 .footer-paragraph1 .paragraph1 .right {
   color: #f3f4f6;
   font-size: 18px;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px; 
 }
 
 .separate {
@@ -703,13 +609,13 @@ body {
   .common-subtitle {
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
   }
 
   .common-paragraph {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
   }
 
   .app-intro .app-intro-top .common-paragraph {
@@ -768,7 +674,6 @@ body {
   .user-app-intro {
     display: flex;
     flex-direction: column;
-    /* height: 750px; */
     height: 844px;
   }
 
@@ -839,7 +744,6 @@ body {
 
   .general-user .section-content .common-subtitle,
   .general-user .section-content .common-paragraph {
-    /* font-size: 14px; */
     width: 90%;
   }
 
@@ -897,9 +801,6 @@ body {
   .app-section-content .phone-media{
     margin: -14.7rem 0 0 0;
   }
-  /* .phone-media {
-    margin: -14.7rem;
-  } */
 
   .app-section-top .app-section-block {
     margin-top: 0;
@@ -1010,33 +911,6 @@ body {
     height: 30%;
   }
 
-  /* .user-app-intro {
-    width: 100%;
-    height: auto !important;
-    display: block;
-  }
-
-  .user-app-intro .grid-media {
-    width: 100%;
-  }
-
-  .user-app-intro .grid-media > img {
-    width: 100%;
-    height: 50%;
-    border-radius: 40px 40px 0px 0px;
-
-  }
-
-  .user-app-intro .grid-content {
-    display: flex;
-    padding: 100px 24px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
-  } */
-
   .general-user.app-intro {
     display: flex;
     flex-direction: column-reverse;
@@ -1073,16 +947,6 @@ body {
   .general-user2 .grid-content {
     padding: 100px 24px;
   }
-
-  /* .app-intro {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  } */
-
-  /* .app-intro .app-intro-top {
-    height: 100vh;
-  } */
 
   .app-intro .app-intro-top .section-content-white {
     width: auto;
