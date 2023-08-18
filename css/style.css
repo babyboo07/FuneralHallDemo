@@ -506,7 +506,7 @@ body {
 
 .app-section .phone-media {
   width: 100%;
-  /* margin: -6rem; */
+  margin: -6rem;
   background: url(/public/phone-preview1.png) no-repeat left;
   background-size: contain;
   margin-left: 10px;
@@ -679,10 +679,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  body{
-    padding: 0 0 0 6px;
-  }
-
   .app-section {
     justify-content: flex-start;
     position: relative;
@@ -760,7 +756,6 @@ body {
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
-    justify-content: space-around;
   }
 
   .navigation-image {
@@ -794,7 +789,7 @@ body {
 
   .user-app-intro .section-content .common-title {
     width: 100%;
-    font-size: 33px;
+    font-size: 36px;
     line-height: 44px;
     padding: 0 0 10px 35px;
   }
@@ -898,13 +893,8 @@ body {
     background-size: 490px 410px;
   }
 
-  /* .phone-media {
+  .phone-media {
     margin: -14.7rem;
-  } */
-
-  .app-intro-bottom .phone-media,
-  .app-section-content .phone-media{
-    margin: -14.7rem 0 0 0;
   }
 
   .app-section-top .app-section-block {
@@ -953,8 +943,50 @@ body {
   }
 
   .app-section .app-section-footer {
-    padding: 20px 20px 39px;
+    padding: 24px;
     border-radius: 40px;
+  }
+
+  .app-section-footer .footer-end {
+    color: #83909e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .footer-paragraph1 .paragraph1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .footer-paragraph1 .paragraph1 .left {
+    color: #83909e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .footer-paragraph1 .paragraph1 .right {
+    color: #f3f4f6;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  
+  .separate {
+    width: 1px;
+    height: 16px;
+    background: #83909e;
+  }
+  
+  .footer-title p {
+    color: #ae8d68;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
   }
 
   .app-section-footer .footer-paragraph1 {
@@ -962,6 +994,7 @@ body {
     height: auto;
     gap: 5px;
   }
+
 }
 
 @media only screen and (max-width: 520px) {
