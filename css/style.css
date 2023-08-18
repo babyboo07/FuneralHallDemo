@@ -506,7 +506,7 @@ body {
 
 .app-section .phone-media {
   width: 100%;
-  margin: -6rem;
+  /* margin: -6rem; */
   background: url(/public/phone-preview1.png) no-repeat left;
   background-size: contain;
   margin-left: 10px;
@@ -679,6 +679,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body{
+    padding: 0 0 0 6px;
+  }
+
   .app-section {
     justify-content: flex-start;
     position: relative;
@@ -756,6 +760,7 @@ body {
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
+    justify-content: space-around;
   }
 
   .navigation-image {
@@ -789,7 +794,7 @@ body {
 
   .user-app-intro .section-content .common-title {
     width: 100%;
-    font-size: 36px;
+    font-size: 33px;
     line-height: 44px;
     padding: 0 0 10px 35px;
   }
@@ -893,8 +898,13 @@ body {
     background-size: 490px 410px;
   }
 
-  .phone-media {
+  /* .phone-media {
     margin: -14.7rem;
+  } */
+
+  .app-intro-bottom .phone-media,
+  .app-section-content .phone-media{
+    margin: -14.7rem 0 0 0;
   }
 
   .app-section-top .app-section-block {
