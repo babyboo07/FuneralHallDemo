@@ -665,6 +665,12 @@ body {
     align-self: stretch;
   }
 
+  .CTA-left .download > img,
+  .CTA-right .download > img {
+    width: 40%;
+    height: auto;
+  }
+
   .navigation-image {
     min-width: 0;
     max-height: 480px;
