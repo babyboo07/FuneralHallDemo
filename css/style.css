@@ -583,6 +583,36 @@ body {
   }
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+
+  .CTA-wrapper {
+    width: 98%;
+  }
+
+  .CTA-left .download > img,
+  .CTA-right .download > img {
+    width: 30% !important;
+  }
+
+  .navigation-image {
+    width: 100%;
+  }
+  .navigation-image{
+    height: 480px !important;
+  }
+
+  #main1,
+  #main2,
+  #main3,
+  #main4,
+  .section-media  {
+    background-size: 100% auto !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .app-section {
     justify-content: flex-start;
