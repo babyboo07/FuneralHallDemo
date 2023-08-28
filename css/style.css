@@ -584,6 +584,10 @@ body {
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .body{
+    width: 100%;
+  }
+
   .hero {
     width: 100%;
   }
@@ -604,12 +608,21 @@ body {
     height: 480px !important;
   }
 
+  .user-app-intro .section-content .common-paragraph{
+    width: 100% !important;
+    padding: 0 0 10px 35px !important;
+  }
+
   #main1,
   #main2,
   #main3,
   #main4,
   .section-media  {
     background-size: 100% auto !important;
+  }
+
+  .app-intro .app-intro-bottom .phone-preview {
+    margin-top: 30px !important;
   }
 }
 
