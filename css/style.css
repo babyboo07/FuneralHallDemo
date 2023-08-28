@@ -578,6 +578,11 @@ body {
     width: 100%;
   }
 
+  .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
+    width: auto;
+    margin-top: 0;
+  }
+
   .CTA-wrapper {
     width: 98%;
   }
@@ -811,11 +816,6 @@ body {
     background-size: contain;
     height: 287px;
     margin-right: 0;
-  }
-
-  .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
-    width: auto;
-    margin-top: 0;
   }
 
   .content-block .common-title,
