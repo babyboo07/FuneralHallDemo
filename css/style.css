@@ -606,15 +606,6 @@ body {
   }
 }
 
-@media only screen and (width: 820px) {
-  #main1,
-  #main2,
-  #main3,
-  #main4 {
-    background-size: 150% 100% !important;
-  }
-}
-
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .common-title {
     font-size: 32px;
@@ -681,6 +672,15 @@ body {
   }
   .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
     width: 375px;
+  }
+}
+
+@media only screen and (width: 820px) {
+  #main1,
+  #main2,
+  #main3,
+  #main4 {
+    background-size: 150% 100% !important;
   }
 }
 
@@ -857,13 +857,13 @@ body {
     width: 100%;
     font-size: 36px;
     line-height: 44px;
-    padding: 0 0 10px 35px;
+    padding: 0 0 10px 22px;
   }
 
   .user-app-intro .section-content .common-paragraph {
     font-size: 16px;
     width: 90%;
-    padding: 0 30px 0 35px;
+    padding: 0 30px 0 22px;
   }
 
   .general-user {
@@ -1085,6 +1085,10 @@ body {
 }
 
 @media only screen and (width: 768px) {
+  .user-app-intro .section-content .common-paragraph {
+    padding: 0 30px 0 0 !important;
+  }
+
   .app-intro .app-intro-top {
     height: 55%;
   }
