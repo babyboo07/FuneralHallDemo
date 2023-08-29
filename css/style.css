@@ -5,6 +5,11 @@ body {
   box-sizing: border-box;
 }
 
+button
+{
+  cursor: pointer;
+}
+
 /* START COMMON */
 
 .common-title {
@@ -130,7 +135,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 52%;
+  width: 60%;
 }
 
 .CTA-left,
@@ -160,7 +165,7 @@ body {
   left: 0;
   right: 0;
   height: 675px;
-  width: 1040px;
+  /* width: 1040px; */
   margin: auto;
   background: url(/public/main-navigation-image.png) no-repeat top;
   background-size: cover;
@@ -558,6 +563,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .phone-preview {
@@ -567,42 +573,64 @@ body {
   margin-right: 50px;
 }
 
+.modal-display{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  padding: 30px;
+  border-radius: 40px;
+  margin: 20px auto auto;
+  background: url(/public/app-intro-background.png) no-repeat center;
+}
+
+.close-button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M9.40898 7.99915L15.7044 1.71303C15.8926 1.52485 15.9983 1.26961 15.9983 1.00347C15.9983 0.737334 15.8926 0.482097 15.7044 0.29391C15.5162 0.105723 15.261 0 14.9949 0C14.7288 0 14.4736 0.105723 14.2854 0.29391L8 6.59002L1.71456 0.29391C1.52639 0.105723 1.27118 2.36288e-07 1.00507 2.38271e-07C0.738961 2.40254e-07 0.483751 0.105723 0.295584 0.29391C0.107417 0.482097 0.0017056 0.737334 0.0017056 1.00347C0.0017056 1.26961 0.107417 1.52485 0.295584 1.71303L6.59102 7.99915L0.295584 14.2853C0.201924 14.3782 0.127583 14.4887 0.0768515 14.6105C0.0261196 14.7323 0 14.8629 0 14.9948C0 15.1268 0.0261196 15.2574 0.0768515 15.3792C0.127583 15.5009 0.201924 15.6115 0.295584 15.7044C0.38848 15.7981 0.499001 15.8724 0.620772 15.9231C0.742543 15.9739 0.873154 16 1.00507 16C1.13699 16 1.2676 15.9739 1.38937 15.9231C1.51114 15.8724 1.62166 15.7981 1.71456 15.7044L8 9.40828L14.2854 15.7044C14.3783 15.7981 14.4889 15.8724 14.6106 15.9231C14.7324 15.9739 14.863 16 14.9949 16C15.1268 16 15.2575 15.9739 15.3792 15.9231C15.501 15.8724 15.6115 15.7981 15.7044 15.7044C15.7981 15.6115 15.8724 15.5009 15.9232 15.3792C15.9739 15.2574 16 15.1268 16 14.9948C16 14.8629 15.9739 14.7323 15.9232 14.6105C15.8724 14.4887 15.7981 14.3782 15.7044 14.2853L9.40898 7.99915Z" fill="%23A9A9A9"/></svg>') center no-repeat;
+}
+
+.modal-content{
+  margin: 10px 5%;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.modal-content::-webkit-scrollbar,
+.modal-content::-webkit-scrollbar-button
+{
+  display: none;
+}
+
+.modal-title{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color:#997c5c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.body-freeze{
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1920) {
   .navigation-image {
     width: 50%;
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  .navigation {
-    padding: 0px 10%;
-  }
-
-  .header .subtitle {
-    padding: 0 20%;
-  }
-
-  .CTA-left .download,
-  .CTA-right .download {
-    justify-content: center;
-  }
-
-  .navigation-image {
-    width: 100%;
-  }
-
-  .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
-    width: auto;
-    margin-top: 0;
-  }
-
-  .CTA-wrapper {
-    width: 98%;
-  }
-
-  .app-section .phone-media {
-    margin-left: 5px;
-    width: 130% !important;
   }
 }
 
@@ -656,7 +684,7 @@ body {
   #main2,
   #main3,
   #main4 {
-    background-size: 100% auto !important;
+    background-size: 150% auto !important;
   }
   .app-section .phone-media {
     width: 100%;
@@ -672,15 +700,6 @@ body {
   }
   .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
     width: 375px;
-  }
-}
-
-@media only screen and (width: 820px) {
-  #main1,
-  #main2,
-  #main3,
-  #main4 {
-    background-size: 150% 100% !important;
   }
 }
 
@@ -734,6 +753,46 @@ body {
 
   .app-section-block .app-section-content .content-block {
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .navigation {
+    padding: 0px 10%;
+  }
+
+  .header .subtitle {
+    padding: 0 20%;
+  }
+
+  .CTA-left .download,
+  .CTA-right .download {
+    justify-content: center;
+  }
+
+  .navigation-image {
+    width: 100%;
+  }
+
+  .app-intro .app-intro-bottom .app-intro-content .app-intro-block {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .CTA-wrapper {
+    width: 98%;
+  }
+
+  .app-section .phone-media {
+    margin-left: 5px;
+    width: 130% !important;
+  }
+
+  #main1,
+  #main2,
+  #main3,
+  #main4 {
+    background-size: 150% 100% !important;
   }
 }
 
