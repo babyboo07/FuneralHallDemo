@@ -157,6 +157,7 @@ button
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  justify-content: center;
 }
 
 .navigation-image {
