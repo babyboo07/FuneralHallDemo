@@ -160,8 +160,11 @@ button {
   justify-content: center;
 }
 
-.CTA-left .download {
-  cursor: pointer !important;
+.CTA-left .download > img,
+.CTA-right .download > img {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .navigation-image {
@@ -578,7 +581,8 @@ button {
   margin-right: 50px;
 }
 
-.modal-display {
+.modal-term,
+.modal-policy {
   display: none;
   position: fixed;
   top: 0;
